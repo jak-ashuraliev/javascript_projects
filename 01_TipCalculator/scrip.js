@@ -1,1 +1,0 @@
-// Calculate Tip Function
