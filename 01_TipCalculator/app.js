@@ -3,6 +3,7 @@ function calculateTip() {
     var billAmount = document.getElementById("billAmount").value;
     var serviceQuality = document.getElementById("serviceQuality").value;
     var peopleAmount = document.getElementById("peopleAmount").value;
+    var tip = document.getElementById("tip");
 
     // input validation
     if (billAmount === "" || serviceQuality == 0) {
@@ -15,7 +16,7 @@ function calculateTip() {
         peopleAmount = 1;
         document.getElementById("each").style.display = "none";
     } else {
-        document.getElementById("each").style.display = "block";
+        document.getElementById("each").style.display = "flex";
     }
 
     // calculate tip
@@ -28,12 +29,14 @@ function calculateTip() {
     total = total.toFixed(2);
 
     // display the tip
-    document.getElementById("totalTip").style.display = "block";
+    document.getElementById("totalTip").style.display = "flex";
     document.getElementById("tip").innerHTML = total;
+    
+    // prepend dollar sign to the tip element 
+    tip.prepend("$");
 }
 
-// hide the tip amount on load
-document.getElementById("totalTip").style.display = "none";
+// hide the each word on load
 document.getElementById("each").style.display = "none";
 
 // click to call the function
