@@ -10,3 +10,17 @@ body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 600px;
+}
