@@ -24,3 +24,7 @@ main {
     max-width: 600px;
     width: 600px;
 }
+
+#img {
+    width: 150px;
+}
