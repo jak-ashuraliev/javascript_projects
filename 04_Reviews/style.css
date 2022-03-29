@@ -9,6 +9,7 @@
 body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
 }
 
 main {
@@ -23,8 +24,52 @@ main {
     text-align: center;
     max-width: 600px;
     width: 600px;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.underline {
+    border-bottom: 4px solid teal;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.review {
+    margin: 1rem;
 }
 
 #img {
     width: 150px;
+}
+
+#author {
+   margin-top: 1rem;
+   color: teal;
+   font-weight: bold;
+   font-size: 1.4rem;
+}
+
+#job {
+    padding: .2rem;
+    font-weight: bold;
+}
+
+#bio {
+    padding: 1rem;
+}
+
+.btn-conainer {
+    margin: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: teal;
+    color: #fff;
+    cursor: pointer;
 }
