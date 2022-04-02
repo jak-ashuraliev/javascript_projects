@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 
-* {
+/* 
+==============
+Global Styles 
+============== 
+*/
+
+*,
+::after,
+::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,10 +19,66 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #eee;
 }
-main {
-    height: 100vh;
+
+ul { 
+    list-style-type: none;
+} 
+
+a { 
+    text-decoration: none;
+}
+
+/* 
+==============
+Navbar 
+============== 
+ */
+
+ nav {
+    background-color: #e2e2e2;
+ }
+
+.nav-header {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+}
+
+/* By Default Hide the links */
+.links {
+    height: 0;
+    overflow: hidden;
+}
+
+/* Toggle Class */
+.show-links {
+    height: 10rem;
+}
+
+.links a {
+    color: teal;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-center {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .links {
+        height: auto;
+        display: flex;
+    }
 }
