@@ -49,11 +49,22 @@ Navbar
 .links {
     height: 0;
     overflow: hidden;
+    transition: all 0.3s linear;
 }
 
 /* Toggle Class */
 .show-links {
     height: 10rem;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.fa-bars {
+    font-size: 1.5rem;
+    color: teal;
 }
 
 .links a {
