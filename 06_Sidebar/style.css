@@ -34,6 +34,11 @@ Sidebar
 ============== 
 */
 
+.fa-accusoft {
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
 .sidebar-toggle {
     position: fixed;
     top: 0;
@@ -67,6 +72,7 @@ Sidebar
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 1rem;
 }
 
 .btn-close {
@@ -79,8 +85,25 @@ Sidebar
     padding-top: .5rem;
 }
 
+.btn-close:hover {
+    color: #4b4b4b;
+}
+
 @media screen and (min-width: 676px) {
     .sidebar {
         width: 400px;
     }
+}
+
+.links li {
+    padding: 1rem 1rem 1rem 2rem;
+    cursor: pointer;
+}
+
+.links li:hover {
+   background-color: white;
+}
+
+.links a {
+    color: #4b4b4b;
 }
