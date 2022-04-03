@@ -27,3 +27,60 @@ ul {
 a { 
     text-decoration: none;
 }
+
+/* 
+==============
+Sidebar
+============== 
+*/
+
+.sidebar-toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: .5rem;
+    color: teal;
+    font-size: 1rem;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    background-color: lightskyblue;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    transform: translate(-100%);
+    transition: all 0.3s linear;
+}
+
+.show-sidebar {
+    transform: translate(0);
+}
+
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-close {
+    background: transparent;
+    color: gray;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+}
+
+@media screen and (min-width: 676px) {
+    .sidebar {
+        width: 400px;
+    }
+}
