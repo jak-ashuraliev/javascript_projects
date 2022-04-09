@@ -30,6 +30,51 @@ a {
 
 /* 
 ==============
-
+MODAL
 ============== 
 */
+
+.hero {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: url(./assets/hero.jpg);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    /* visibility: hidden; */
+    /* z-index: -10; */
+    transition: all 0.3s linear;
+    background: rgba(187, 187, 187, 0.5);
+}
+
+.modal-container {
+    background-color: #eee;
+    text-align: center;
+    width: 60%;
+    height: 40%;
+    padding: 1rem;
+    position: relative;
+}
+
+.modal-container h2 {
+    padding: 1rem;
+}
+
+.btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    color: red;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
