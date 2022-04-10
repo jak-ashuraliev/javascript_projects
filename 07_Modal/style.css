@@ -30,7 +30,7 @@ a {
 
 /* 
 ==============
-MODAL
+HERO & MODAL
 ============== 
 */
 
@@ -41,6 +41,29 @@ MODAL
     background: url(./assets/hero.jpg);
 }
 
+.banner {
+    background: rgba(187, 187, 187, 0.5);
+    padding: 2rem;
+    width: 50%;
+    height: 20%;
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+}
+
+.btn-open-modal{
+    color: #000;
+    background-color: lightseagreen;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-open-modal:hover {
+    background-color: darkcyan
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -49,8 +72,8 @@ MODAL
     height: 100%;
     display: grid;
     place-items: center;
-    /* visibility: hidden; */
-    /* z-index: -10; */
+    visibility: hidden;
+    z-index: -10;
     transition: all 0.3s linear;
     background: rgba(187, 187, 187, 0.5);
 }
@@ -68,7 +91,7 @@ MODAL
     padding: 1rem;
 }
 
-.btn-close {
+.btn-close-modal {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -77,4 +100,10 @@ MODAL
     border: none;
     font-size: 1rem;
     cursor: pointer;
+}
+
+/* OPEN AND CLOSE MODAL */
+.open-modal {
+    visibility: visible;
+    z-index: 10;
 }
