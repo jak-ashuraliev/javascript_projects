@@ -33,3 +33,49 @@ a {
 
 ============== 
 */
+
+.section {
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.heading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.article {
+    background-color: #fff;
+    padding: 1rem;
+    width: 60vw;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+/* hide text  */
+.accordion-text {
+    display: none;
+}
+
+.minus-icon {
+    display: none;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+.btn-article {
+    border: none;
+    background: none;
+    padding: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
