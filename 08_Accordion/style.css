@@ -30,7 +30,7 @@ a {
 
 /* 
 ==============
-
+Accordion
 ============== 
 */
 
@@ -55,12 +55,31 @@ a {
     border-radius: 4px;
 }
 
+.accordion-text {
+    padding: 1rem;
+    border-top: 1px solid #e7e7e7;
+    line-height: 1.4rem;
+}
+
 /* hide text  */
 .accordion-text {
     display: none;
 }
 
+/* show text */
+.show-text .accordion-text {
+    display: block;
+}
+
 .minus-icon {
+    display: none;
+}
+
+.show-text .minus-icon {
+    display: block;
+}
+
+.show-text .plus-icon {
     display: none;
 }
 
@@ -76,6 +95,6 @@ a {
     border: none;
     background: none;
     padding: 6px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
 }
