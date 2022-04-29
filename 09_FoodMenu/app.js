@@ -39,24 +39,48 @@ const menu = [
 ];
 
 const sectionCenter = document.querySelector('.section-center');
+const btnFilter = document.querySelectorAll('.btn-filter');
 
-// window load 
+// load all items when page loads
 window.addEventListener('DOMContentLoaded', function() {
-    let displayMenu = menu.map(function(item){ 
+    displayMenuItems(menu);
+});
+
+// filter items
+btnFilter.forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+        const category = e.currentTarget.dataset.type;
+        const menuCategory = menu.filter(function(menuItem) {
+            if (menuItem.category === category) {
+                return menuItem;
+            }
+        });
+
+        if (category === "all") {
+            displayMenuItems(menu);
+        } else {
+            displayMenuItems(menuCategory);
+        }
+    });
+});
+
+// function to display menu items 
+function displayMenuItems(menuItems) {
+    let displayMenu = menuItems.map(function(item){ 
         return `
-        <article class="menu-item">
-            <img src="${item.img}" alt="${item.title}" class="photo">
-            <div class="item-info">
-                <header>
-                    <h4>${item.title}</h4>
-                    <h4 class="price">${item.price}</h4>
-                </header>
-                <p class="item-text">
-                    ${item.description}
-                </p>
-                <p class="calories">Calories: <span class="caloires">${item.calories}</span></p>
-            </div>
-        </article>`
+            <article class="menu-item">
+                <img src="${item.img}" alt="${item.title}" class="photo">
+                <div class="item-info">
+                    <header>
+                        <h4>${item.title}</h4>
+                        <h4 class="price">${item.price}</h4>
+                    </header>
+                    <p class="item-text">
+                        ${item.description}
+                    </p>
+                    <p class="calories">Calories: <span class="caloires">${item.calories}</span></p>
+                </div>
+            </article>`
     });
 
     // return a new string by concatenating all the array elements
@@ -64,4 +88,4 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // add/insert our data/displayMenu in the HTML
     sectionCenter.innerHTML = displayMenu;
-});
+};
