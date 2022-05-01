@@ -33,3 +33,82 @@ a {
 
 ============== 
 */
+
+.menu {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.underline {
+    width: 100px;
+    margin: 0 auto;
+    padding-top: .5rem;
+    border-bottom: 2px solid #f37736;
+}
+
+.btn-container{
+    text-align: center;
+    padding: 2rem;
+}
+
+.btn-filter {
+    margin: 4px;
+    padding: 6px 16px;
+    border: 2px solid #f37736;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    background-color: #f37736;
+}
+
+.section-center {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 300px);
+   gap: 1rem;
+   justify-content: center;
+}
+
+.menu-item {
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.photo {
+    width: 100%;
+}
+
+.menu-item header {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin: 1rem 0;
+}
+
+.price {
+    color: #f37736;
+}
+
+.item-text {
+    margin: 1rem 0;
+    color: rgb(87, 85, 85);
+}
+
+.calories {
+    margin: 1rem 0;
+}
+
+.active {
+    background-color: #f37736;
+}
