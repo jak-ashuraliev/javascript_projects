@@ -93,7 +93,7 @@ function displayMenuItems(menuItems) {
                 <div class="item-info">
                     <header>
                         <h4>${item.title}</h4>
-                        <h4 class="price">${item.price}</h4>
+                        <h4 class="price">$${item.price}</h4>
                     </header>
                     <p class="item-text">
                         ${item.description}
@@ -142,6 +142,14 @@ function displayMenuButtons() {
             } else {
                 displayMenuItems(menuCategory);
             }
+
+            // add active class to the button
+            btnFilter.forEach(function(btn){
+                btn.classList.remove('active')
+            });
+            this.classList.add('active');
+        
         });
     });
-}
+  
+};
