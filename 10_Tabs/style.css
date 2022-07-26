@@ -34,8 +34,42 @@ a {
 ============== 
 */
 
+section {
+    width: 60%;
+    margin: 60px auto;
+}
+
+.title h2 {
+    padding-bottom: 1rem;
+}
+
+.main-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.tab-btn:hover {
+    background: rgb(196, 196, 196);
+}
+
 .content-item {
     display: none;
+    padding: 2rem;
+}
+
+.content-item h4 {
+    padding-bottom: 1rem;
+}
+
+.content-item p {
+    line-height: 24px;
 }
 
 .tab-btn.active {
